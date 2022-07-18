@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --blue: #1986c4;
+  --darkBlue: #033754;
+  --orange: #c46507;
+  --darkOrange: #9f560d;
+  --smokeGray: #d0cccc;
+}
+
+#header {
+  background-color: #e5e5e5;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+#header-btn {
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.sec1-banner-bg {
+  background-image: url(./img/work-desk__dustin-lee.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.sec1-img {
+  width: 10%;
+  margin: 1% 0% 0% 1%;
+}
+
+.div-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  color: white;
+}
+
+.sec1-h3 {
+  width: 60%;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.p-banner {
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+.sec1-a {
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.sec1-a:hover {
+  background-color: white;
+  color: var(--darkBlue);
+  font-weight: bold;
+}
+
+.sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec2-div, .all-cards  {
+  margin: 20px;
+}
+.sec2-h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sec2-p {
+  text-align: center;
+}
+
+.cards {
+  border: 1px solid rgb(229, 229, 229);
+  padding: 24px;
+  text-align: center;
+  margin: 10px;
+}
+
+.div-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup {
+  background-color: var(--blue);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.closebtn p {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  padding: 0 10px 0 0;
+}
+
+.popup-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  height: 200px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.popup-body button {
+  background-color: var(--orange);
+  height: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--darkBlue);
+  color: white;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-visible{
+  opacity:1;
+}
+
+.is-hidden{
+  opacity: 0;
+}
+
+@media (min-width: 481px) and (max-width: 959px) {
+  .all-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    gap: 74px;
+  }
+
+  .cards {
+    width: 35%;
+  }
+}
+
+@media (min-width: 960px) {
+  #header {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 30px;
+  }
+
+  .header-p {
+    word-break: break-all;
+    width: 40%;
+  }
+
+  #header-btn {
+    width: 80px;
+  }
+
+  .sec1-img {
+    width: 4%;
+  }
+
+  .p1-banner {
+    font-weight: bold;
+  }
+
+  .all-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cards {
+    width: 25%;
+  }
+
+  .popup {
+    width: 50%;
+    left: 0;
+  }
+
+  #header-btn {
+    cursor: pointer;
+  }
+}
